@@ -1,0 +1,136 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    background-color: rgb(175, 175, 191);
+    font-family: 'Cinzel', serif;
+}
+
+
+
+.box-shadow{
+    margin: 50% auto;
+    background-color: #171717ff;
+    color: #fff;
+    width: 800px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    box-shadow: 1px 1px #000;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    position: relative;
+    box-shadow: #000000cc 10px 10px 10px 0px inset;
+
+}
+
+.box-shadow::before{
+    content: '';
+    display: block;
+    width: 533px;
+    height: 130px;
+    transform: rotate(20deg);
+    background-color: rgb(175, 175, 191);
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: -15px;
+}
+
+.box-shadow::after{
+    content: '';
+    display: block;
+    width: 533px;
+    height: 130px;
+    transform: rotate(160deg);
+    background-color: rgb(175, 175, 191);
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    right: -15px;
+    
+}
+
+.head{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #171717;
+    position: absolute;
+    top: -75px;
+    left: 253;
+    border-top: 40px solid rgb(175, 175, 191);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    
+}
+
+.head::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(175, 175, 191);;
+    position: absolute;
+    border-bottom-left-radius: 100px;
+    top: 35px;
+    left: -120px;
+    
+    
+}
+
+.head::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(175, 175, 191);
+    position: absolute;
+    border-bottom-left-radius: 100px;
+    top: 35px;
+    left: 60px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+
+
+
+.extrem::before{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(175, 175, 191);
+    position: absolute;
+    transform: rotate(40deg);
+    top: -4px;
+    left: -128px;
+    border-radius: 50%;
+    
+}
+
+.extrem::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(175, 175, 191);
+    position: absolute;
+    transform: rotate(40deg);
+    top: -4px;
+    right: -128px;
+    border-radius: 50%;
+}
